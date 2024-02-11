@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINECRAFT</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js"></script>
+    <link rel="shortcut icon" href="grass.jpg" type="image/x-icon">
+</head>
+<body id = "body">
+    <div id = "web">
+        
+        <div id = "menu"><button class = "button" name = "zasady" onclick="zagraj()">Zagraj</button><br><br><button class = "button" name = "zagraj" onclick="zasady()">Zasady</button></div>
+        <div id = "zasady" class = "hidden-div"><h1>Zasady</h1><br>adafafafafafafsfafaf<br><br><button class = "button" onclick = "powrot()">Powrot</button></div>
+        <div id = "ending" class="hidden-div">Wygrales!<br><button class ="button" onclick ="wyjdz2()">POWROT</button></div>
+        <div id = "lose" class="hidden-div">Przegrales!<br><button class ="button" onclick ="wyjdz3()">POWROT</button></div>
+    </div>
+    <div id = "gra" class = "hidden-div">
+        <div id = "staty">Statystyki:<br>
+            <table>
+                <tr>
+                    <td><img src = "heart.jpg"></td>
+                    <td id = "HP">20</td>
+                    
+                    <td><img src = "dollar.jpg"></td>
+                    <td id = "MP">0</td>
+                </tr>
+            </table>
+        </div>
+        <div id = "exit"><button class = "button" onclick="wyjdz()">Powrot</button></div>
+        <div  id = "items">
+            Materialy:
+            <br>
+            <table>
+                <tr>
+                    <td colspan="2"><img src = "planks.jpg"></td>
+                    <td id = "drewno">0</td>
+                    <td colspan="2"><img src = "stone.jpg"></td>
+                    <td id = "kamien">0</td>
+                    <td colspan="2"><img src = "iron.jpg"></td>
+                    <td id = "zelazo">0</td>
+                    <td colspan="2"><img src = "diamond.jpg"></td>
+                    <td id = "diament">0</td>
+                    <td colspan="2"><img src = "stick.jpg"></td>
+                    <td id = "stick">0</td>
+                </tr>
+            </table>
+        </div>
+        <div  id = "tools">
+            Narzedzia:
+            <br>
+            <table>
+                <tr>
+                    <td colspan="2"><img src = "w_pickaxe.jpg"></td>
+                    <td id = "w_pickaxe">X</td>
+                    <td colspan="2"><img src = "s_pickaxe.jpg"></td>
+                    <td id = "s_pickaxe">X</td>
+                    <td colspan="2"><img src = "i_pickaxe.jpg"></td>
+                    <td id = "i_pickaxe">X</td>
+                    <td colspan="2"><img src = "d_pickaxe.jpg"></td>
+                    <td id = "d_pickaxe">X</td>  
+                </tr>
+            </table>
+        </div>
+        <div id = "polecenia">
+            <div id = "header">Polecenia</div>
+            <br>
+            <div id = "section">
+                <br>
+                <br>
+                <button class = "button" onclick="kop_drewno()">Kop drewno</button>
+                <br>
+                <br>
+                <button class = "button" onclick="kop_kamien()">Kop kamien</button>
+                <br>
+                <br>
+                <button class = "button" onclick="kop_zelazo()">Kop zelazo</button>
+                <br>
+                <br>
+                <button class = "button" onclick="kop_diamenty()">Kop diamenty</button>
+                <br>
+                <br>
+                <button class = "button" onclick="craft_w_pickaxe()">Buduj drewniany kilof</button>
+                <br>
+                <br>
+                <button class = "button" onclick="craft_s_pickaxe()">Buduj kamienny kilof</button>
+                <br>
+                <br>
+                <button class = "button" onclick="craft_i_pickaxe()">Buduj zelazny kilof</button>
+                <br>
+                <br>
+                <button class = "button" onclick="craft_d_pickaxe()">Buduj diamentowy kilof</button>
+                <br>
+                <br>
+                <button class = "button" onclick="craft_sticks()">Tworz patyki</button>
+                <br>
+                <br>
+                <button class = "button" onclick="wood_sell()">Sprzedaj drewno</button>
+                <br>
+                <br>
+                <button class = "button" onclick="stone_sell()">Sprzedaj kamien</button>
+                <br>
+                <br>
+                <button class = "button" onclick="iron_sell()">Sprzedaj zelazo</button>
+                <br>
+                <br>
+                <button class = "button" onclick="diamond_sell()">Sprzedaj diamenty</button>
+                <br>
+                <br>
+                <button class = "button" onclick="buy_food()">Kup jedzenie</button>
+            </div>
+            <br>
+            <div id = "footer">
+                <button class = "button" onclick = "ending()">Zakoncz gre</button>
+            </div>
+            <div id = "chat">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
